@@ -1,0 +1,14 @@
+public class Main {
+    public static void main(String[] args) {
+        int num, a, b, c, sum;
+        for (num = 100; num <= 999; num++) {
+            a = num / 100;
+            b = (num / 10) % 10;
+            c = num % 10;
+            sum = (a * a * a) + (b * b * b) + (c * c * c);
+            if (sum == num) {
+                System.out.println(num);
+            }
+        }
+    }
+}
